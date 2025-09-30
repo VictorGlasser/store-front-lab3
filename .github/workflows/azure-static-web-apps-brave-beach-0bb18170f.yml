@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     env:
       VUE_APP_ORDER_SERVICE_URL: https://order-service-app-a9htgzhpbugfe4h5.canadacentral-01.azurewebsites.net/
-      VUE_APP_PRODUCT_SERVICE_URL:  https://product-service-app-cucqgzg2fecegtbq.canadacentral-01.azurewebsites.net/products
+      VUE_APP_PRODUCT_SERVICE_URL:  https://product-service-app-cucqgzg2fecegtbq.canadacentral-01.azurewebsites.net/
     steps:
       - uses: actions/checkout@v3
         with:
@@ -47,3 +47,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_BEACH_0BB18170F }}
           action: "close"
+
